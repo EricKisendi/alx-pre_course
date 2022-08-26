@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Second project</title>
+    <meta name="viewport" content="width=device-width, initial-1">
+    <meta charset="utf-8" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Cinzel|Fauna|Arima|Rubik Moonrocks|Frederica the great|Chewy|Tapestry|Henny Penny|Macondo|Fresca|Cinzel Decorative">
+<link rel="icon" type="image/png" href="https://www.europeanantiques.co.nz/wp-content/uploads/2018/07/3353_0.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+    *{
+        box-sizing: border-box;
+        font-family: arima,serif;
+    }
+    .nav-item:hover{
+        background-color: rgb(175, 162, 162);
+        color: white;
+    }
+    .collec{
+        display: flex;
+        flex-wrap: wrap;        
+    }
+    .cont{
+        flex: 30%;
+    }
+    .card{
+        box-shadow: 5px 3px 1px rgb(167, 150, 150);
+    }
+    #contact{
+        max-width: 50%;
+        margin: auto;
+    }
+    .img1:hover{
+        opacity: 0.7;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-family: tapestry,serif;
+    }
+</style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<div class="container-fluid bg-info p-5 text-white text-center">
+    <h1 class="display-1 animate__animated animate__zoomInDown" style="font-family: henny penny,serif;">My First Project</h1>
+    <p class="lead animate__animated animate__zoomInDown animate__delay-1s" style="font-family: rubik moonrocks,serif;"><b>Topic:</b> One piece</p>
+</div>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top animate__animated animate__lightSpeedInRight animate__delay-2s">
+    <div class="container-fluid">
+        <div class="navbar-brand" href="#"><i class="material-icons">home</i></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#pictures">Pictures</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">link1</a></li>
+                    <li class="dropdown-item"><a href="#">link2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid" id="home">
+
+    <!--carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+      
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid" src="https://imgs.search.brave.com/pNRzURW10R0mOBDbW7HCKfabANP-DGNUyE163ihqHzU/rs:fit:1200:900:1/g:ce/aHR0cHM6Ly9zdGF0/aWMxLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIwLzA1L0ZlYXR1/cmVkLUltYWdlLU9u/ZS1QaWVjZS1Dcm9w/cGVkLTIuanBn" alt="one" class="d-block" style="width:100%;">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://imgs.search.brave.com/XDViU0mP0IPHLgICYszYtoqR4snOTiSCS8z2EzrjQKU/rs:fit:1200:900:1/g:ce/aHR0cHM6Ly9zdGF0/aWMzLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIwLzA1L0ZlYXR1/cmVkLUltYWdlLU9u/ZS1QaWVjZS1Dcm9w/cGVkLmpwZw" alt="piece" class="d-block " style="width: 100%;">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://imgs.search.brave.com/zyrdPgQwek9EMqIFw_3UTa_03YaBRZKdLqXX1HeLP0s/rs:fit:1200:900:1/g:ce/aHR0cHM6Ly9zdGF0/aWMyLmNicmltYWdl/cy5jb20vd29yZHBy/ZXNzL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIwLzAyL0ZlYXR1/cmVkLUltYWdlLVN0/cmF3LUhhdHMtQ3Jv/cHBlZC5qcGc" alt="family" class="d-block w-100"style="width: 100%;">
+          </div>
+        </div>
+      
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>   
+</div>
+
+<!-- About -->
+<div class="container mt-4" id="about" style="text-align: justify;padding-top: 60px;">
+    <h1 class="display-3 text-center ">About</h1>
+    <p class="text-center lead" style="color:rgb(185, 183, 183) ;"><i>About: One piece</i></p>
+    <p>One Piece (stylized in all caps) is a Japanese manga series written and illustrated by Eiichiro Oda. It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July 1997, with its individual chapters compiled into 102 tankōbon volumes as of April 2022. The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties of rubber after unintentionally eating a Devil Fruit. With his pirate crew, the Straw Hat Pirates, Luffy explores the Grand Line in search of the deceased King of the Pirates Gol D. Roger's ultimate treasure known as the "One Piece" in order to become the next King of the Pirates.</p>
+    <div class="collec">
+        <div class="cont">
+            <div class="card mx-auto" style="width: 60%;">
+                <img class="img1" src="https://vignette.wikia.nocookie.net/heros/images/e/e4/Monkey_D_Luffy_Infobox.jpg/revision/latest?cb=20200618183025&path-prefix=fr" width="100%">
+                <div class="card-body">
+                    <div class="card-title">
+                        <p class="text-center lead">Luffy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="card mx-auto" style="width: 70%;">
+                <img class="img1" src="https://comicvine.gamespot.com/a/uploads/scale_medium/12/124715/3972816-2920799702-Times.jpg" width="100%">
+                <div class="card-body">
+                    <div class="card-title">
+                        <p class="lead text-center">Zoro</p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="cont"><div class="card mx-auto" style="width: 72%;">
+            <img class="img1" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d51b29f0-be8a-4dc5-ac07-9df6eeacc19b/dal7po2-54004928-431e-4413-9fa1-be7da3d38bea.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9kNTFiMjlmMC1iZThhLTRkYzUtYWMwNy05ZGY2ZWVhY2MxOWIvZGFsN3BvMi01NDAwNDkyOC00MzFlLTQ0MTMtOWZhMS1iZTdkYTNkMzhiZWEuanBnIn1dXX0.DvyKxknUVKDPi8Cru0y1zty4iFAJIg6u62C3cqhRtrk" width="100%">
+            <div class="card-body">
+                <div class="card-title">
+                    <p class="text-center lead">Sanji</p>
+                </div>
+            </div>
+        </div>            
+        </div>
+    </div>
+    <!--modal-->
+    <div>
+        <button type="button" class="btn btn-primary mt-4 " data-bs-toggle="modal" data-bs-target="#mymodal">Send a tip</button>
+    </div>
+    <div class="modal fade" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-image:url(https://imgs.search.brave.com/LDhRcjCJrhRoP6nU9LFiYCvEHNcyhppmsBzlCfgd44w/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4z/Y21QSjkxajNBeDNH/dUZWTXZoU3ZnSGFF/OCZwaWQ9QXBp) ;color: white;object-fit:cover;">
+                <div class="modal-header">
+                    <h4 class="modal-title animate__animated animate__rubberBand animate__delay-1s animate__repeat-2">Send'em Loot</i></h4>
+                    <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" style="background-color: white;"></button>
+                </div>
+                <div class="modal-body">
+                    <form acttion="/action_page.php">
+                        <label for="amount">Enter amount :</label><br>
+                        <input type="text" id="amount" name="amount" placeholder="Enter amount" style="width: 100%;" required>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-info float-end">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br><hr>
+
+<!--Contact-->
+<div class="container-fluid" id="contact" style="padding-top:60px ;">
+    <h3 class="display-3 text-center mt-3">Contact</h3>
+    <p class="text-center" style="color:rgb(185, 183, 183) ;"><i>Where and how to contact us</i></p>
+    <div class="row">
+        <div class="col-md-6">
+            <i class="material-icons">my_location</i>  Nagasaki ,Japan<br>
+            <i class="material-icons">phone</i>  Phone Number :<strong> 0797504177</strong><br>
+            <i class="material-icons">mail</i> Email :<strong> erickisendi@gmail.com</strong>
+        </div>
+        <div class="col-md-6">
+            <form action="/action_page.php">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Email" name="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-floating mt-2">
+                    <input type="text" class="form-control" placeholder="messaages" name="messaages" id="messaages" required>
+                    <label for="messaages">Messaage</label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="d-grid mt-2">
+        <input type="button" class="btn btn-primary d-block" value="Send Message">
+    </div>
+</div><br><hr>
+
+<!--Pictures-->
+<div class="container-fluid mt-5 mb-4" id="pictures">
+    <h4 class="display-4 text-center">Pictures</h4>
+    <img class="img-fluid" src="https://wallpapercave.com/wp/fvCYaJe.jpg" width="100%">
+</div>
+<div class="container text-center mb-5">
+    <a href="#"><i class="material-icons">facebook</i></a>
+    <a href="#" class="text-warning"><i class="material-icons">snapchat</i></a>
+    <a href="#" class="text-success"><i class="material-icons">whatsapp</i></a>
+</div>
+</body>
+</html>
